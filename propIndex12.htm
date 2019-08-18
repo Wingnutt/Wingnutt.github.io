@@ -1,0 +1,4080 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>CSS Properties Index</title>
+	<style>
+		html {
+			color: lime;
+			background: black;
+		}
+		body {
+		}
+
+
+		#outerdiv {
+			margin-top: 2pt;
+		}
+
+		#sidebardiv {
+			border: 2px solid red;
+			margin-top: 0pt;
+			padding-top: 3pt;
+			width: 20%;
+			height: 97%;
+			position: fixed;
+			top: 4pt;
+			left: 5pt;
+		}
+
+
+		#propstablediv {
+			position: absolute;
+			top: 4pt;
+			left: 22%;
+			width: 77%;
+		}
+		#propstable {
+			border: 2px solid red;
+			margin-left: 0pt;
+			width: 100%;
+		}
+
+
+		.modtd {
+			padding: 0pt;
+			border: 1pt purple solid;
+			border-top: none;
+			margin-top: -2pt;
+			cursor: pointer;
+			height: 17pt;
+		}
+
+		#chkb {
+			padding: 0pt;
+			cursor: pointer;
+		}
+		#modname {
+			color: gold;
+			font-family: Verdana;
+			font-size: 10pt;
+			padding-left: 5pt;
+			padding-right: 5pt;
+			cursor: pointer;
+		}
+
+		#sbbc {
+			margin-top: -2pt;
+			padding: 1pt;
+		}
+
+		#sbb0 {
+			color: mediumseagreen;
+			font-weight: bold;
+			font-family: Verdana;
+			font-size: 12pt;
+			text-align: center;
+			margin-bottom: 2pt;
+			margin-top: 2pt;
+		}
+
+		#sbb1 {
+			color: black;
+			font-weight: bold;
+			font-family: arial;
+			font-size: 10pt;
+			font-weight:bold;
+			border: 2pt #33aa77 outset;
+			background-color: #33aa77;
+			text-align: center;
+			margin-bottom: 1pt;
+			cursor: pointer;
+			height: 10pt;
+			padding-bottom: 2pt;
+		}
+
+		#sbb2 {
+			color: black;
+			font-weight: bold;
+			font-family: arial;
+			font-size: 10pt;
+			font-weight:bold;
+			border: 2pt #33aa77 outset;
+			background-color: #33aa77;
+			text-align: center;
+			cursor: pointer;
+			height: 10pt;
+			padding-bottom: 2pt;
+		}
+
+		a:link {
+			color: gold;
+			font-family: Verdana;
+			font-size: 11pt;
+		}
+
+		a:link#n {
+			color: white;
+			font-family: Verdana;
+			font-size: 11pt;
+		}
+
+		a:visited {
+			color: gold;
+		}
+
+		a:visited#n {
+			color: white;
+		}
+
+		tr {
+			border: 2px solid red;
+		}
+
+
+		.hh0, .fh0 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 25%;
+		}
+
+		.hh1, .fh1 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 7%;
+		}
+
+		.hh2, .fh2 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 7%;
+		}
+
+		.hh3, .fh3 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 7%;
+		}
+
+		.hh4, .fh4 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 7%;
+		}
+
+		.hh5, .fh5 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 17%;
+		}
+
+		.hh6, .fh6 {
+			text-align: center;
+			border-top: 3px solid white;
+			border-bottom: 3px solid white;
+			width: 30%;
+		}
+
+		.col0 {
+			padding: 3pt;
+			padding-left: 5pt;
+			border-top: 2px solid red;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		.col0 + td {
+			text-align: center;
+			border-top: 2px solid green;
+			border-left: 2px solid black;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		.col0 + td + td {
+			text-align: center;
+			border-top: 2px solid blue;
+			border-left: 2px solid black;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		.col0 + td + td + td {
+			text-align: center;
+			border-top: 2px solid green;
+			border-left: 2px solid black;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		.col0 + td + td + td + td {
+			text-align: center;
+			border-top: 2px solid red;
+			border-left: 2px solid black;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		.col0 + td + td + td + td + td {
+			text-align: center;
+			border-top: 2px solid blue;
+			border-left: 2px solid black;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		.col0 + td + td + td + td + td + td {
+			padding-left: 5pt;
+			border-top: 2px solid orange;
+			border-left: 2px solid black;
+			font-family: verdana;
+			font-size: 11pt;
+		}
+
+		#normal {
+			border: 2px solid black;
+			background: black;
+		}
+		#match {
+			background: #220000;
+		}
+		#audio {
+			background: #002200;
+		}
+		.info1 {
+			padding-top: 5pt;
+			color: white;
+		}
+		.info2 {
+			padding-top: 5pt;
+			color: red;
+		}
+
+	</style>
+
+	<script type="text/javascript" src="./propIndex.js"></script>
+
+</head>
+
+<body onload="main()">
+
+
+<div id="outerdiv">
+
+<div id="sidebardiv">
+
+<!-- <div id="sbb0"> Categories </div> -->
+
+<div class="modtd" onclick="flipchild(this, 'anim');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Animations</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'aural');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Aural Style Sheets</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'bkg');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Background</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'becss');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Behavioral Extensions</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'box');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Box</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'brd');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Border (part of Background module)</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'cascade');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Cascade</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'color');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Color</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'content');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Content</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'decor');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Decoration (of text)</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'flexbox');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Flexible Box Layout</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'font');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Fonts</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'frag');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Fragmentation/Break</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'gcpm');">
+	<input id="chkb" type="checkbox" onclick="flipchild(this.parentNode, 'gcpm');">
+	<span id="modname">Generated Content (gcpm)</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'grid');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Grid</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'hyper');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Hyperlink Presentation</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'images');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Images</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'linebox');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Linebox</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'list');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Lists</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'marq');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Marquee</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'mcol');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Multi-column</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'mpage');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Multi-page</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'overflow');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Overflow</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'page');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Page</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'preslev');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Presentation Levels</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'ruby');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Ruby</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'speech');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Speech</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'tab');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Tables</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'layout');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Template Layout</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'text');">
+	<input id="chkb" type="checkbox" onclick="flipchild(this.parentNode, 'text');">
+	<span id="modname">Text</span>
+</div>
+
+<div class="modtd" style="border-top: 1pt purple solid;" onclick="flipchild(this, 'tform');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Transformations</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'transi');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Transitions</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'ui');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">UI</span>
+</div>
+
+
+<div class="modtd" onclick="flipchild(this, 'visren');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Visual Formatting (visuren)</span>
+</div>
+
+<div class="modtd" onclick="flipchild(this, 'visufx');">
+	<input id="chkb" type="checkbox" onclick=parentNode.onclick()>
+	<span id="modname">Visual Effects (visufx)</span>
+</div>
+
+<div id="sbbc">
+	<div id="sbb1" onclick="all();">all</div>
+	<div id="sbb2" onclick="none();">none</div>
+</div>
+
+</div> <!-- sidebardiv -->
+
+<div id="propstablediv">
+	<table id="propstable">
+		<thead>
+			<tr>
+				<th class="hh0" scope="col">Property</th>
+				<th class="hh1" scope="col"><a target="new" href="http://www.w3.org/TR/CSS1">CSS 1</a></th>
+				<th class="hh2" scope="col"><a target="new" href="http://www.w3.org/TR/2008/REC-CSS2-20080411/">CSS 2</a></th>
+				<th class="hh3" scope="col"><a target="new" href="http://www.w3.org/TR/CSS21/"><em>CSS 2.1</em></a></th>
+				<th class="hh4" scope="col"><a target="new" href="http://www.w3.org/Style/CSS/current-work"><em>CSS 3</em></a></th>
+				<th class="hh5" scope="col">CSS3 Module</th>
+				<th class="hh6" scope="col">Initial Value</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th class="fh0" scope="col">Property</th>
+				<th class="fh1" scope="col"><a target="new" href="http://www.w3.org/TR/CSS1">CSS 1</a></th>
+				<th class="fh2" scope="col"><a target="new" href="http://www.w3.org/TR/2008/REC-CSS2-20080411/">CSS 2</a></th>
+				<th class="fh3" scope="col"><a target="new" href="http://www.w3.org/TR/CSS21/"><em>CSS 2.1</em></a></th>
+				<th class="fh4" scope="col"><a target="new" href="http://www.w3.org/Style/CSS/current-work"><em>CSS 3</em></a></th>
+				<th class="fh5" scope="col">CSS3 Module</th>
+				<th class="fh6" scope="col">Initial Value</th>
+
+			</tr>
+			<tr>
+			<th colspan="7">
+				<center>
+				<span id="match" style="margin-left: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> = same in all specs </span>
+				<span id="jo"><span id="audio" style="margin-left: 10pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> = audio/speech properties </span>
+				<div class="info1"> White Text Links = NEW for CSS3 </div>
+				<br>
+				<div> A special thanks goes to <a href="http://meiert.com/en/">Jens O. Meiert</a> and <a href="http://meiert.com/en/indices/css-properties/">HIS list</a>... which made THIS list possible! </div>
+				</center>
+			</th>
+			</tr>
+		</tfoot>
+
+		<tbody id="propstabletbody">
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#align-content">align-content</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>stretch</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#align-items">align-items</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>stretch</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#align-self">align-self</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#alignment-adjust-prop">alignment-adjust</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="yes"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#alignment-baseline-prop">alignment-baseline</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>baseline</td>
+			</tr>
+			<tr class="cascade" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-cascade/#all-shorthand">all</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-cascade/">cascade</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="mpage" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html#anchor-points">anchor-point</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/commands.html">multipage?</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation">animation</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-delay">animation-delay</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-direction">animation-direction</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-duration">animation-duration</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-iteration-count">animation-iteration-count</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>1</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-name">animation-name</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-play-state">animation-play-state</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>running</td>
+			</tr>
+			<tr class="anim" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-animations/#animation-timing-function">animation-timing-function</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-animations/">animation</a></td>
+				<td>ease</td>
+			</tr>
+
+<!--
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#appearance0">appearance</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>normal</td>
+			</tr>
+
+-->
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-azimuth">azimuth</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>center</td>
+			</tr>
+			<tr class="tform" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transforms/#backface-visibility-property">backface-visibility</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transforms/">transforms</a></td>
+				<td>visible</td>
+			</tr>
+			<tr class="bkg" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-background">background</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="bkg" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-background-attachment">background-attachment</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>scroll</td>
+			</tr>
+
+<!--
+			<tr class="bkg" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-background-break">background-break</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>continuous</td>
+			</tr>
+-->
+
+			<tr class="bkg" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-background-clip">background-clip</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>border-box</td>
+			</tr>
+			<tr class="bkg" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-background-color">background-color</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>transparent</td>
+			</tr>
+			<tr class="bkg" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-background-image">background-image</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="bkg" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-background-origin">background-origin</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>padding-box</td>
+			</tr>
+			<tr class="bkg" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-background-position">background-position</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0% 0%</td>
+			</tr>
+			<tr class="bkg" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-background-repeat">background-repeat</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>repeat</td>
+			</tr>
+			<tr class="bkg" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-background-size">background-size</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#baseline-shift-prop">baseline-shift</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>baseline</td>
+			</tr>
+			<tr class="becss" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/becss/#the-binding">binding</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/becss/">becss</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#bleed">bleed</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>6pt</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#bookmark-label">bookmark-label</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>content()</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#bookmark-level">bookmark-level</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#bookmark-state">bookmark-state</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>open</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#bookmark-target">bookmark-target</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>self</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#border">border</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-shorthands">border-bottom</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-color">border-bottom-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>currentColor</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-radius">border-bottom-left-radius</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-radius">border-bottom-right-radius</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-style">border-bottom-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-width">border-bottom-width</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="tab" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/tables.html#propdef-border-collapse">border-collapse</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/tables.html">tables (CSS 2.1)</a></td>
+				<td>separate</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#border-color">border-color</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-image">border-image</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>See individual properties</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-image-outset">border-image-outset</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-image-repeat">border-image-repeat</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>stretch</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-image-slice">border-image-slice</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>100%</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-image-source">border-image-source</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-image-width">border-image-width</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>1</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-shorthands">border-left</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-color">border-left-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>currentColor</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-style">border-left-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-width">border-left-width</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>medium</td>
+			</tr>
+
+<!--
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2007/WD-css3-gcpm-20070504/#border-length">border-length</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2007/WD-css3-gcpm-20070504/">gcpm?</a></td>
+				<td>auto</td>
+			</tr>
+-->
+
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-radius">border-radius</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-shorthands">border-right</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-color">border-right-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>currentColor</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-style">border-right-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-width">border-right-width</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="tab" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/tables.html#propdef-border-spacing">border-spacing</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-tables/">tables (CSS 2.1)</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#border-style">border-style</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-shorthands">border-top</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-color">border-top-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>currentColor</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-radius">border-top-left-radius</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-border-radius">border-top-right-radius</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="brd" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-style">border-top-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#the-border-width">border-top-width</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="brd" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-background/#border-width">border-width</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-bottom">bottom</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis-ren (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+
+<!--
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-align">box-align</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>stretch</td>
+			</tr>
+-->
+
+
+			<tr class="bkg" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-box-decoration-break">box-decoration-break</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>slice</td>
+			</tr>
+
+<!--
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-direction">box-direction</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-flex">box-flex</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>0.0</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-flex-group">box-flex-group</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>1</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-lines">box-lines</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>single</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-ordinal-group">box-ordinal-group</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>1</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-orient">box-orient</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>inline-axis</td>
+			</tr>
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#propdef-box-pack">box-pack</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>start</td>
+			</tr>
+
+-->
+
+			<tr class="bkg" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-background/#the-box-shadow">box-shadow</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-background/">background</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#box-sizing0">box-sizing</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>content-box</td>
+			</tr>
+
+
+
+
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#break-after">break-after (mcol module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="frag" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/#break-properties">break-after (frag module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/">frag/break</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-layout/#breaking-content-between-slots-in-a-chai">break-after (layout module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+
+
+
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#break-before">break-before (mcol module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="frag" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/#break-properties">break-before (frag module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/">frag/break</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-layout/#breaking-content-between-slots-in-a-chai">break-before (layout module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+
+
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#break-inside">break-inside (mcol module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="frag" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/#break-properties">break-inside (frag module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/">frag/break</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-layout/#breaking-content-between-slots-in-a-chai">break-inside (layout module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+
+
+
+			<tr class="tab" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/tables.html#propdef-caption-side">caption-side</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/tables.html">tables (CSS 2.1)</a></td>
+				<td>top</td>
+			</tr>
+
+
+
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-layout/#chains">chains</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>none</td>
+			</tr>
+
+
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#clear">clear (box module)</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="visren" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#clear">clear (visren module)</a></td>
+				<td><span class="yes" alt="yes"> ? </span></td>
+				<td><span class="yes" alt="yes"> ? </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="visufx" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visufx.html#propdef-clip">clip</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visufx.html">vis fx</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="color" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-color/#color0">color</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-color/">color</a></td>
+				<td>implementation dependent</td>
+			</tr>
+			<tr class="color" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2003/CR-css3-color-20030514/#icc-color">color-profile</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2003/CR-css3-color-20030514">color?</a></td>
+				<td>auto</td>
+			</tr>
+
+<!--
+
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-breaks">column-break-after</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-breaks">column-break-before</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-breaks">??column-break-inside??</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+
+-->
+
+
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-count">column-count</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-fill">column-fill</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>balance</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-gap">column-gap</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-rule">column-rule</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-rule-color">column-rule-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>currentColor</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-rule-style">column-rule-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-rule-width">column-rule-width</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-span">column-span</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#column-width">column-width</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="mcol" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-multicol/#columns">columns</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-multicol/">multicol</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-content/#content">content</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-content/#counters">counter-increment</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>note?</td>
+			</tr>
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-content/#counters">counter-reset</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>note?</td>
+			</tr>
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-content/#the-crop">crop</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>auto</td>
+			</tr>
+
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#cue">cue (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#cue">cue (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#cue-after">cue-after (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#cue-after">cue-after (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#cue-before">cue-before (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#cue-before">cue-before (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+
+
+
+
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-ui/#cursor0">cursor</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-direction">direction</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>ltr</td>
+			</tr>
+
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-lsquo">display (box module)</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>inline</td>
+			</tr>
+
+			<tr class="content" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-content/#the-display">display (content module)</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>inline</td>
+			</tr>
+
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-layout/#declaring-templates-the-display-property">display (layout module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#display-prop">display (visren module)</a></td>
+				<td><span class="no" alt="no"> ? </span></td>
+				<td><span class="no" alt="no"> ? </span></td>
+				<td><span class="no" alt="no"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>inline</td>
+			</tr>
+
+
+<!--
+
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-layout/#tabbed">display-model</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-layout/#tabbed">display-role</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+
+-->
+
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#dominant-baseline-prop">dominant-baseline</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#drop-initial-after-adjust">drop-initial-after-adjust</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>text-after-edge</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#drop-initial-after-align">drop-initial-after-align</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>baseline</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#drop-initial-before-adjust">drop-initial-before-adjust</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>text-before-edge</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#drop-initial-before-align">drop-initial-before-align</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>caps-height</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#drop-initial-size">drop-initial-size</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#drop-initial-value">drop-initial-value</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>initial</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-elevation">elevation</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>level</td>
+			</tr>
+			<tr class="tab" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/tables.html#propdef-empty-cells">empty-cells</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/tables.html">tables (CSS 2.1)</a></td>
+				<td>show</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-property">flex</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>See individual properties</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-basis-property">flex-basis</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-direction-property">flex-direction</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>row</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-flow-property">flex-flow</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>See individual properties</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-grow-property">flex-grow</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>0</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-shrink-property">flex-shrink</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>1</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#flex-wrap-property">flex-wrap</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>nowrap</td>
+			</tr>
+
+
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#float">float (box module)</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="visren" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#float-position">float (visren module)</a></td>
+				<td><span class="yes" alt="yes"> ? </span></td>
+				<td><span class="yes" alt="yes"> ? </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+
+
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#float-offset">float-offset</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>0 0</td>
+			</tr>
+			<tr class="font" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-prop">font</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+
+			<tr class="font" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-family-prop">font-family</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>implementation dependent</td>
+			</tr>
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-feature-settings-prop">font-feature-settings</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-kerning-prop">font-kerning</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-language-override-prop">font-language-override</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="font" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-size-prop">font-size</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-size-adjust-prop">font-size-adjust</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-stretch-prop">font-stretch</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="font" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-style-prop">font-style</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-synthesis-prop">font-synthesis</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>weight style</td>
+			</tr>
+
+
+			<tr class="font" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-variant-prop">font-variant</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-variant-alternates-prop">font-variant-alternates</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-variant-caps-prop">font-variant-caps</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-variant-east-asian-prop">font-variant-east-asian</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-variant-ligatures-prop">font-variant-ligatures</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-variant-numeric-prop">font-variant-numeric</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="font" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-fonts/#font-variant-position-prop">font-variant-position</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="font" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-fonts/#font-weight-prop">font-weight</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-fonts/">fonts</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-after">grid-after</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-area0">grid-area</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>see individual properties</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-auto-columns">grid-auto-columns</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-auto-flow">grid-auto-flow</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-auto-rows">grid-auto-rows</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-before">grid-before</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-column">grid-column</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>see individual properties</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-definition-columns">grid-definition-columns</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>none</td>
+			</tr>
+
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-definition-rows">grid-definition-rows</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-end">grid-end</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-row">grid-row</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>see individual properties</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-start">grid-start</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-grid-layout/#grid-template">grid-template</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-grid-layout/">grid</a></td>
+				<td>none</td>
+			</tr>
+
+
+<!--
+			<tr class="grid" id="normal">
+				<td class="col0"><a target="new" id="n" href="">NOTICE!</a></td>
+				<td colspan=6><span> Grid (like CSS Templates) is under VERY active dev. See <a target="new" href="http://www.w3.org/TR/css3-grid-layout/">http://www.w3.org/TR/css3-grid-layout/</a></span</td>
+			</tr>
+-->
+
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#hanging-punctuation">hanging-punctuation</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#height">height</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="text" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#hyphens">hyphens</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>manual</td>
+			</tr>
+
+
+<!--
+
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#hyphenate-after">hyphenate-after</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#hyphenate-before">hyphenate-before</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#hyphenate-character">hyphenate-character</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#hyphenate-lines">hyphenate-lines</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>no-limit</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#hyphenate-resource">hyphenate-resource</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>none</td>
+			</tr>
+
+-->
+
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#icon">icon</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="images" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-images/#image-orientation">image-orientation</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-images/">images</a></td>
+				<td>0deg</td>
+			</tr>
+
+<!--
+
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-images/#image-rendering">image-rendering</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>normal</td>
+			</tr>
+
+-->
+
+
+			<tr class="images" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-images/#image-resolution">image-resolution</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-images/#image-resolution">images</a></td>
+				<td>1dppx</td>
+			</tr>
+
+
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#input-method-editor">ime-mode</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#inline-box-align-prop">inline-box-align</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>last</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-flexbox/#justify-content">justify-content</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>flex-start</td>
+			</tr>
+
+
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-left">left</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="text" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#letter-spacing">letter-spacing</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#line-break">line-break</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="linebox" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-linebox/#InlineBoxHeight">line-height</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#line-stacking">line-stacking</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#line-stacking-ruby">line-stacking-ruby</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>exclude-ruby</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#line-stacking-shift">line-stacking-shift</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>consider-shifts</td>
+			</tr>
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#line-stacking-strategy">line-stacking-strategy</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>inline-line-height</td>
+			</tr>
+			<tr class="list" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-lists/#list-style">list-style</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-lists/">lists</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="list" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-lists/#list-style-image">list-style-image</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-lists/">lists</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="list" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-lists/#list-style-position">list-style-position</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-lists/">lists</a></td>
+				<td>outside</td>
+			</tr>
+			<tr class="list" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-lists/#list-style-type">list-style-type</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-lists/">lists</a></td>
+				<td>disc</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-margin">margin</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0?</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-margin">margin-bottom</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-margin">margin-left</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-margin">margin-right</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-margin">margin-top</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-gcpm/#marks">marks</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>none</td>
+			</tr>
+
+
+<!--
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#mark-after">mark-after</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#mark-before">mark-before</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+
+-->
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#marquee-direction">marquee-direction (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>forward</td>
+			</tr>
+
+			<tr class="marq" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-marquee/#the-marquee-direction">marquee-direction (marquee module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-marquee/">marquee</a></td>
+				<td>reverse</td>
+			</tr>
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#marquee-loop">marquee-loop</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>1</td>
+			</tr>
+
+			<tr class="marq" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-marquee/#the-marquee-play-count">marquee-play-count</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-marquee/">marquee</a></td>
+				<td>1</td>
+			</tr>
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#marquee-speed">marquee-speed (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>normal</td>
+			</tr>
+
+			<tr class="marq" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-marquee/#the-marquee-speed">marquee-speed (marquee module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-marquee/">marquee</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#marquee-style">marquee-style (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="marq" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-marquee/#the-marquee-style">marquee-style (marquee module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-marquee/">marquee</a></td>
+				<td>scroll</td>
+			</tr>
+
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#max-height">max-height</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="overflow" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css-overflow-3/#max-lines0">max-lines</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css-overflow-3/">css-overflow-3</a></td>
+				<td>none</td>
+			</tr>
+
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#max-width">max-width</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#min-height">min-height</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#min-width">min-width</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-content/#moving">move-to</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#nav-dir">nav-down</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#nav-index0">nav-index</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#nav-dir">nav-left</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#nav-dir">nav-right</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#nav-dir">nav-up</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="images" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-images/#the-object-fit">object-fit</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-images/">images</a></td>
+				<td>fill</td>
+			</tr>
+
+			<tr class="images" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-images/#the-object-position">object-position</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-images/">images</a></td>
+				<td>50% 50%</td>
+			</tr>
+
+
+
+			<tr class="color" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-color/#opacity">opacity</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-color/">color</a></td>
+				<td>1</td>
+			</tr>
+
+
+			<tr class="flexbox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-flexbox/#order">order</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-flexbox/">flexbox</a></td>
+				<td>0</td>
+			</tr>
+
+			<tr class="frag" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/#widows-orphans">orphans</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="www.w3.org/TR/2012/WD-css3-break-20120823/">frag/break</a></td>
+				<td>2</td>
+			</tr>
+
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-ui/#outline0">outline</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-ui/#outline-color0">outline-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>invert</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#outline-offset0">outline-offset</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-ui/#outline-style0">outline-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-ui/#outline-width0">outline-width</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>medium</td>
+			</tr>
+
+
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#overflow0">overflow (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+
+
+			<tr class="overflow" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css-overflow-3/#overflow">overflow (overflow module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css-overflow-3/">css overflow 3</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+
+			<tr class="visufx" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visufx.html#overflow">overflow (vis fx module)</a></td>
+				<td><span class="no" alt="no"> ? </span></td>
+				<td><span class="yes" alt="yes"> ? </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visufx.html">vis fx</a></td>
+				<td>visible</td>
+			</tr>
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-lsquo3">overflow-style (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="marq" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-marquee/#the-overflow-style">overflow-style (marquee module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-marquee/">marquee</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#overflow-wrap">overflow-wrap</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#overflow-x">overflow-x (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>visible</td>
+			</tr>
+
+			<tr class="overflow" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css-overflow-3/#overflow-x">overflow-x (overflow module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css-overflow-3/">css overflow 3</a></td>
+				<td>visible</td>
+			</tr>
+
+
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#overflow-y">overflow-y (box module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>visible</td>
+			</tr>
+
+			<tr class="overflow" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css-overflow-3/#overflow-y">overflow-y (overflow module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css-overflow-3/">css overflow 3</a></td>
+				<td>visible</td>
+			</tr>
+
+
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-padding">padding</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0?</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-padding">padding-bottom</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-padding">padding-left</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-padding">padding-right</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#the-padding">padding-top</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="page" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-page/#page">page</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-page/">page</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="frag" id="normal">
+
+
+<!--
+			<tr class="page" id="normal">
+				<td class="col0">page-break-after</td>
+				<td colspan="6">See 'break-after' (in the multi-column and frag/break modules)</td>
+			</tr>
+			<tr class="page" id="normal">
+				<td class="col0">page-break-before</td>
+				<td colspan="6">See 'break-before' (in the multi-column and frag/break modules)</td>
+			</tr>
+			<tr class="page" id="normal">
+				<td class="col0">page-break-inside</td>
+				<td colspan="6">See 'break-inside' (in the multi-column and frag/break modules)</td>
+			</tr>
+			<tr class="page" id="normal">
+				<td class="col0">orphans</td>
+				<td colspan="6">See 'orphans' (in the frag/break module)</td>
+			</tr>
+			<tr class="page" id="normal">
+				<td class="col0">widows</td>
+				<td colspan="6">See 'widows' (in the frag/break module)</td>
+			</tr>
+-->
+
+
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-content/#page-policy">page-policy</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>start</td>
+			</tr>
+
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#pause">pause (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#pause">pause (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#pause-after">pause-after (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#pause-after">pause-after (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#pause-before">pause-before (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#pause-before">pause-before (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+
+			<tr class="tform" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transforms/#perspective-property">perspective</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transforms/">transforms</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="tform" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transforms/#perspective-origin-property">perspective-origin</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transforms/">transforms</a></td>
+				<td>50% 50%</td>
+			</tr>
+
+<!--
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#phonemes">phonemes</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>implementation dependent</td>
+			</tr>
+
+-->
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-pitch">pitch</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-pitch-range">pitch-range</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>50</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-play-during">play-during</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-position">position (visren module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>static</td>
+			</tr>
+
+			<tr class="layout" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-layout/#position">position (layout module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-layout/">layout</a></td>
+				<td>?</td>
+			</tr>
+
+			<tr class="preslev" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-preslev/#presentation-level-property">presentation-level</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-preslev/">preslev</a></td>
+				<td>0</td>
+			</tr>
+
+
+<!--
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#punctuation-trim">punctuation-trim</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>none</td>
+			</tr>
+
+-->
+
+
+			<tr class="content" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-content/#quotes">quotes</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-content/">content</a></td>
+				<td>text</td>
+			</tr>
+			<tr class="color" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2003/CR-css3-color-20030514/#renderingintent">rendering-intent</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2003/CR-css3-color-20030514/">color?</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#resize0">resize</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#rest">rest</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#rest-after">rest-after</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#rest-before">rest-before</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-richness">richness</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>50</td>
+			</tr>
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-right">right</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#rotating">rotation</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-box/#rotating">rotation-point</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>50% 50%</td>
+			</tr>
+			<tr class="ruby" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ruby/#ruby-align">ruby-align</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ruby/">ruby</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="ruby" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ruby/#ruby-overhang">ruby-overhang</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ruby/">ruby</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="ruby" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ruby/#ruby-position">ruby-position</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ruby/">ruby</a></td>
+				<td>before</td>
+			</tr>
+			<tr class="ruby" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ruby/#ruby-span">ruby-span</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ruby/">ruby</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="page" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-page/#size">size</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-page/">page</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#speak">speak (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>auto</td>
+			</tr>
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#speaking-props">speak (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#speak-as">speak-as</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>normal</td>
+			</tr>
+
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-speak-header">speak-header</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>once</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-speak-numeral">speak-numeral</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>continuous</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-speak-punctuation">speak-punctuation</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-speech-rate">speech-rate</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-stress">stress</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>50</td>
+			</tr>
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#string-set">string-set</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#tab-size">tab-size</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>8</td>
+			</tr>
+			<tr class="tab" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/tables.html#propdef-table-layout">table-layout</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/tables.html">tables (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="hyper" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-hyperlinks/#the-target">target</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-hyperlinks/">hyperlinks</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="hyper" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-hyperlinks/#the-target-name">target-name</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-hyperlinks/">hyperlinks</a></td>
+				<td>current</td>
+			</tr>
+			<tr class="hyper" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-hyperlinks/#the-target-new">target-new</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-hyperlinks/">hyperlinks</a></td>
+				<td>window</td>
+			</tr>
+			<tr class="hyper" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-hyperlinks/#the-target-position">target-position</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-hyperlinks/">hyperlinks</a></td>
+				<td>above</td>
+			</tr>
+			<tr class="text" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#text-align">text-align</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>start</td>
+			</tr>
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#text-align-last">text-align-last</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-decoration-property">text-decoration</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>none</td>
+			</tr>
+
+
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-decoration-color-property">text-decoration-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>currentColor</td>
+			</tr>
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-decoration-line-property">text-decoration-line</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-decoration-skip-property">text-decoration-skip</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>objects</td>
+			</tr>
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-decoration-style-property">text-decoration-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>solid</td>
+			</tr>
+
+
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-emphasis-property">text-emphasis</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>see individual properties </td>
+			</tr>
+
+
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-emphasis-color-property">text-emphasis-color</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>currentColor</td>
+			</tr>
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-emphasis-position-property">text-emphasis-position</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>over right</td>
+			</tr>
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-emphasis-style-property">text-emphasis-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>none</td>
+			</tr>
+
+
+			<tr class="linebox" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-linebox/#inline1">text-height</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="text" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#text-indent">text-indent</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#text-justify">text-justify</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>auto</td>
+			</tr>
+
+<!--
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#text-outline">text-outline</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>none</td>
+			</tr>
+-->
+
+
+			<tr class="ui" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-ui/#text-overflow">text-overflow</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-ui/">ui</a></td>
+				<td>none</td>
+			</tr>
+
+
+
+<!--
+
+			<tr class="gcpm" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-gcpm/#text-replace">text-replace</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-gcpm/">gcpm</a></td>
+				<td>none</td>
+			</tr>
+-->
+
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-shadow-property">text-shadow</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>none</td>
+			</tr>
+
+
+<!--
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#white-space-collapsing">text-space-collapse</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>none</td>
+			</tr>
+-->
+
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#text-transform0">text-transform</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>none</td>
+			</tr>
+
+
+
+			<tr class="decor" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/#text-underline-position-property">text-underline-position</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/2012/WD-css-text-decor-3-20121113/">decor</a></td>
+				<td>auto</td>
+			</tr>
+
+<!--
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#text-wrap">text-wrap</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+
+-->
+
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-top">top</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="tform" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transforms/#transform-property">transform</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transforms/">transforms</a></td>
+				<td>none</td>
+			</tr>
+			<tr class="tform" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transforms/#transform-origin-property">transform-origin</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transforms/">transforms</a></td>
+				<td>50% 50%</td>
+			</tr>
+			<tr class="tform" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transforms/#transform-style-property">transform-style</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transforms/">transforms</a></td>
+				<td>flat</td>
+			</tr>
+			<tr class="transi" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transitions/#transition">transition</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transitions/">transitions</a></td>
+				<td>depending on individual properties</td>
+			</tr>
+			<tr class="transi" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transitions/#transition-delay">transition-delay</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transitions/">transitions</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="transi" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transitions/#transition-duration">transition-duration</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transitions/">transitions</a></td>
+				<td>0</td>
+			</tr>
+			<tr class="transi" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transitions/#transition-property">transition-property</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transitions/">transitions</a></td>
+				<td>all</td>
+			</tr>
+			<tr class="transi" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-transitions/#transition-timing-function">transition-timing-function</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-transitions/">transitions</a></td>
+				<td>ease</td>
+			</tr>
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-unicode-bidi">unicode-bidi</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="linebox" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-linebox/#vertical-align-prop">vertical-align</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-linebox/">line(box)</a></td>
+				<td>baseline</td>
+			</tr>
+			<tr class="box" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#visibility">visibility</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>visible</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-balance">voice-balance</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>center</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-duration">voice-duration</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>auto</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-speech/#voice-family">voice-family (speech module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>implementation dependent</td>
+			</tr>
+
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-voice-family">voice-family (aural module)</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>depends on user agent</td>
+			</tr>
+
+
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-pitch">voice-pitch</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-range">voice-range</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-rate">voice-rate</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-stress">voice-stress</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="speech" id="audio">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-speech/#voice-volume">voice-volume</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-speech/">speech</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="aural" id="audio">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/aural.html#propdef-volume">volume</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/aural.html">aural (CSS 2.1)</a></td>
+				<td>medium</td>
+			</tr>
+			<tr class="text" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#white-space">white-space</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>undefined</td>
+			</tr>
+
+<!--
+
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#white-space-collapse">white-space-collapse</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>collapse</td>
+			</tr>
+-->
+
+
+			<tr class="frag" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/2012/WD-css3-break-20120823/#widows-orphans">widows</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="www.w3.org/TR/2012/WD-css3-break-20120823/">frag/break</a></td>
+				<td>2</td>
+			</tr>
+
+			<tr class="box" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-box/#width">width</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-box/">box</a></td>
+				<td>auto</td>
+			</tr>
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#word-break">word-break</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="text" id="match">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/css3-text/#word-spacing">word-spacing</a></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="text" id="normal">
+				<td class="col0"><a target="new" id="n" href="http://www.w3.org/TR/css3-text/#word-wrap">word-wrap</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/css3-text/">text</a></td>
+				<td>normal</td>
+			</tr>
+			<tr class="visren" id="normal">
+				<td class="col0"><a target="new" href="http://www.w3.org/TR/CSS21/visuren.html#propdef-z-index">z-index</a></td>
+				<td><span class="no" alt="no"> N </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td><span class="yes" alt="yes"> Y </span></td>
+				<td>?</td>
+				<td><a target="new" id="nm" href="http://www.w3.org/TR/CSS21/visuren.html">vis ren (CSS 2.1)</a></td>
+				<td>auto</td>
+			</tr>
+<!--
+			<tr id="normal">
+				<td class="col0">Quantity (out of 264)</th>
+				<td>53</td>
+				<td>120</td>
+				<td>115</td>
+				<td><span id="ed">246</span></td>
+				<td></td>
+				<td></td>
+			</tr>
+-->
+
+		</tbody> <!-- propstabletbody -->
+	</table> <!-- propstable -->
+</div> <!-- propstablediv -->
+
+</div> <!-- outerdiv -->
+<br>
+
+</body>
+</html>
